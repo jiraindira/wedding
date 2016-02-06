@@ -206,12 +206,16 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Futura-pt', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 	color:#333333;
+}
+
+ul {
+	list-style: none;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, 
@@ -305,6 +309,11 @@ img.with-border{
 
 .official-headline {
     color: #f0394d;
+}
+
+.official-link {
+	color: #132efc;
+	text-decoration: underline;
 }
 /*===============================================*/
 /* 02. NAV BAR  	 							 */
@@ -420,7 +429,7 @@ img.with-border{
 	list-style-type:none; 
 	margin:0; 
 	padding:45px 0 0 0;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'futura-pt', sans-serif;
 	font-size:13px;
 	z-index:1000;
 }
@@ -793,7 +802,7 @@ img.with-border{
 	margin:35px;
 	margin-bottom:100px;
 	padding:0;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Futura-pt', sans-serif;
 	font-size:14px;
 	z-index:1000;
 }
@@ -1514,7 +1523,7 @@ a.de-button, span.de-button, input[type=submit]{
 	margin:0 auto; 
 	margin-top:20px; 
 	background-color:#FFF; 
-	font-family: 'Oswald', sans-serif; 	
+	font-family: 'Futura-pt', sans-serif;
 	border:solid 1px #6a6a6a
 }
 
@@ -1571,7 +1580,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 /* ----------------------------------------------*/
 .banner-text{
 	display:inline-block;
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Futura-pt', sans-serif;
 	margin:auto;
 	margin-top:30px;
 	margin-bottom:30px; 	
@@ -1617,7 +1626,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 .banner-text.withlove{
 	position:relative;
 	display:inline-block;
-	font-family: 'Oswald', sans-serif;  
+	font-family: 'Futura-pt', sans-serif;
 	margin:auto;
 	margin-top:30px;
 	margin-bottom:30px;
@@ -2339,7 +2348,7 @@ a:hover .de-icon.effect3{
 /* 11.4 Label									 */
 /*-----------------------------------------------*/
 form label{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Futura-pt', sans-serif;
 	font-size:14px;
 	font-weight:normal;
 }
@@ -2537,7 +2546,7 @@ form .has-error .btn-primary{
 	border: none;
 	background-color:transparent;
 	color:#FFF;
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Futura-pt', sans-serif;
 	font-size:13px;
 }
 
@@ -2605,7 +2614,7 @@ footer .image-divider.fixed-height{
 }
 
 #footer-couple-name{
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Futura-pt', sans-serif;
 	font-size:20px; 
 	color:#FFF; 
 	letter-spacing:3px; 
@@ -2677,7 +2686,7 @@ footer .image-divider.fixed-height{
 }
 
 #banner-date{
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Futura-pt', sans-serif;
 	letter-spacing:3px; 
 	font-size:14px;
 }
@@ -2749,7 +2758,7 @@ footer .image-divider.fixed-height{
 }
 
 .story-date .date-only{
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Futura-pt', sans-serif;
 	font-size:30px; 
 	color:#FFF; 
 	line-height:30px; 
@@ -2757,7 +2766,7 @@ footer .image-divider.fixed-height{
 }
 
 .story-date .month-year{
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Futura-pt', sans-serif;
 	font-size:16px; 
 	color:#FFF;
 }
@@ -2854,7 +2863,7 @@ h2#dont-miss-it-title{
 .circle-countdown.is-countdown {
 	background-color:transparent;
 	border:none;
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Futura-pt', sans-serif;
 }
 
 .circle-countdown .countdown-amount {
@@ -3361,7 +3370,7 @@ button.mfp-close, button.mfp-arrow {
     }
 
     .story-date .month-year {
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Futura-pt', sans-serif;
         font-size: 16px;
         color: #FFF;
     }
@@ -3726,7 +3735,7 @@ footer .image-divider.fixed-height{
 }
 
 #footer-couple-name{
-	font-family: 'Oswald', sans-serif; 
+	font-family: 'Futura-pt', sans-serif;
 	font-size:15px; 
 	color:#FFF; 
 	letter-spacing:3px; 
