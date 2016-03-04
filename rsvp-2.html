@@ -122,42 +122,11 @@
 	</nav>
 </header> <!-- END of NAVIGATION -->
 
-<!-- MAIN SLIDER -->
-<section id="main-slider" class="fixed-height">
-
-	<!-- MAIN SLIDER TITLE OUTTER WRAPPER -->
-	<div class="slide-title-outter-wrapper">
-
-		<!-- MAIN SLIDER TITLE INNER WRAPPER -->
-		<div class="slide-title-inner-wrapper">
-
-			<!-- TITLE 1  -->
-			<div class="slide-title align-bottom">
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-offset-2 col-md-8">
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div><!-- END of MAIN SLIDER TITLE INNER WRAPPER -->
-
-	</div> <!-- END of MAIN SLIDER TITLE OUTTER WRAPPER -->
-
-	<!-- MAIN SLIDER IMAGES -->
-	<div class="slides">
-		<!-- SLIDE IMAGE -->
-		<div data-stellar-ratio="0.5" class="slide-image" style="background-image:url(images/rsvp.jpg);">
-		</div>
-
-		<div class="slide-overlay"> </div>
-	</div>	<!-- END of MAIN SLIDER IMAGES -->
-
-</section><!-- ENF of MAIN SLIDER -->
+<section id="main-page">
+	<div class="image-divider fixed-height" style="background-image:url(images/rsvp.jpg);" data-stellar-background-ratio="0.5">
+		<!--<div class="divider-overlay" style="opacity:0.1"></div>-->
+	</div>
+</section>
 
 <!--CONTENT SECTION-->
 <section id="content">
@@ -165,7 +134,7 @@
 	<!-- ICON -->
 	<div class="icon-title">
 		<div class="de-icon circle light large-size aligncenter">
-			<i class="de-icon-home"></i>
+			<i class="de-icon-pencil-3"></i>
 		</div>
 	</div>
 
@@ -287,21 +256,21 @@
 						</div>
 					</div>
 
-					<div class="form-group">
-						<label for="input-song">Song Request</label>
-						<div class="input-group">
-							<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
-							<input type="text" id="input-song" class="form-control ajax-input"  placeholder="We will try to play your song during the wedding">
-						</div>
-					</div>
+					<!--<div class="form-group">-->
+						<!--<label for="input-song">Song Request</label>-->
+						<!--<div class="input-group">-->
+							<!--<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>-->
+							<!--<input type="text" id="input-song" class="form-control ajax-input"  placeholder="We will try to play your song during the wedding">-->
+						<!--</div>-->
+					<!--</div>-->
 
-					<div class="form-group">
-						<label for="input-comments">Comments</label>
-						<div class="input-group">
-							<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
-							<textarea id="input-comments" class="form-control ajax-input" rows="4" placeholder="Please use this area to specify things like dietary restrictions, etc " data-output-label="Output Comments"></textarea>
-						</div>
-					</div>
+					<!--<div class="form-group">-->
+						<!--<label for="input-comments">Comments</label>-->
+						<!--<div class="input-group">-->
+							<!--<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>-->
+							<!--<textarea id="input-comments" class="form-control ajax-input" rows="4" placeholder="Please use this area to specify things like dietary restrictions, etc " data-output-label="Output Comments"></textarea>-->
+						<!--</div>-->
+					<!--</div>-->
 
 
 
@@ -319,39 +288,46 @@
 
 <!-- FOOTER SECTION -->
 <footer>
-	<div class="image-divider fixed-height" style="background-image:url(http://placehold.it/1920x1080); height:400px" data-stellar-background-ratio="0.5" >
+	<footer>
+		<div class="image-divider fixed-height" style="background-image:url(images/balloon.jpg);" data-stellar-background-ratio="0.5" >
 
-		<div class="divider-overlay"></div>
+			<div class="divider-overlay"></div>
 
-		<!-- Use Center Middle Alignment to align middle the content for fixed-height parallax -->
-		<div class="alignment">
-			<div class="v-align center-middle">
+			<!-- Use Center Middle Alignment to align middle the content for fixed-height parallax -->
+			<div class="alignment">
+				<div class="v-align center-middle">
 
-				<!-- HEART DIVIDER & COUPLE NAME -->
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
 
-							<div class="heart-divider animation delay1 fadeInUp">
-								<span class="white-line"></span>
-								<i class="de-icon-heart pink-heart"></i>
-								<i class="de-icon-heart white-heart"></i>
-								<span class="white-line"></span>
+								<div class="animation fadeInUp">
+									<div id="thank-you">
+										<div id="thank">Thank</div>
+										<div id="you">You</div>
+									</div>
+								</div>
+
+								<div class="heart-divider animation delay1 fadeInUp">
+									<span class="white-line"></span>
+									<i class="de-icon-heart pink-heart"></i>
+									<i class="de-icon-heart white-heart"></i>
+									<span class="white-line"></span>
+								</div>
+
+								<div id="footer-couple-name" class="animation delay1 fadeInUp">
+									Natalia & Jirain
+								</div>
+
 							</div>
-
-							<div id="footer-couple-name" class="animation delay1 fadeInUp">
-								GERRARD & DIANNE
-							</div>
-
 						</div>
 					</div>
-				</div><!-- END of HEART DIVIDER & COUPLE NAME -->
 
+				</div>
 			</div>
-		</div><!-- END of Center Middle Alignment -->
 
-	</div>
-</footer><!-- END of FOOTER SECTION -->
+		</div>
+	</footer>
 
 <!-- jQuery -->
 <script src="js/jquery-1.11.1.min.js"></script>
