@@ -206,16 +206,12 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 	color:#333333;
-}
-
-ul {
-	list-style: none;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, 
@@ -229,7 +225,7 @@ h1, h2, h3,
   margin-bottom: 20px;
 }
 
-h4, h5, h6,
+h4, h5, h6
 .h4, .h5, .h6{
 	 margin-top: 10px;
   margin-bottom: 10px;
@@ -307,14 +303,7 @@ img.with-border{
 	border:1px solid #6a6a6a;
 }
 
-.official-headline {
-    color: #f0394d;
-}
 
-.official-link {
-	color: #132efc;
-	text-decoration: underline;
-}
 /*===============================================*/
 /* 02. NAV BAR  	 							 */
 /*===============================================*/
@@ -429,7 +418,7 @@ img.with-border{
 	list-style-type:none; 
 	margin:0; 
 	padding:45px 0 0 0;
-	font-family: 'futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size:13px;
 	z-index:1000;
 }
@@ -802,7 +791,7 @@ img.with-border{
 	margin:35px;
 	margin-bottom:100px;
 	padding:0;
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size:14px;
 	z-index:1000;
 }
@@ -1523,7 +1512,7 @@ a.de-button, span.de-button, input[type=submit]{
 	margin:0 auto; 
 	margin-top:20px; 
 	background-color:#FFF; 
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif; 	
 	border:solid 1px #6a6a6a
 }
 
@@ -1580,7 +1569,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 /* ----------------------------------------------*/
 .banner-text{
 	display:inline-block;
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif; 
 	margin:auto;
 	margin-top:30px;
 	margin-bottom:30px; 	
@@ -1626,7 +1615,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 .banner-text.withlove{
 	position:relative;
 	display:inline-block;
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif;  
 	margin:auto;
 	margin-top:30px;
 	margin-bottom:30px;
@@ -1725,11 +1714,6 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 /*===============================================*/
 /* 08. ICON										 */
 /*===============================================*/
-
-.icon-duck {
-	background-image: url("https://c2.staticflickr.com/6/5599/15052187034_966559a71f_b.jpg");
-}
-
 .de-icon{
 	width: 60px;
 	height: 60px;
@@ -2348,7 +2332,7 @@ a:hover .de-icon.effect3{
 /* 11.4 Label									 */
 /*-----------------------------------------------*/
 form label{
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size:14px;
 	font-weight:normal;
 }
@@ -2546,7 +2530,7 @@ form .has-error .btn-primary{
 	border: none;
 	background-color:transparent;
 	color:#FFF;
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif; 
 	font-size:13px;
 }
 
@@ -2614,7 +2598,7 @@ footer .image-divider.fixed-height{
 }
 
 #footer-couple-name{
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif; 
 	font-size:20px; 
 	color:#FFF; 
 	letter-spacing:3px; 
@@ -2686,7 +2670,7 @@ footer .image-divider.fixed-height{
 }
 
 #banner-date{
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif; 
 	letter-spacing:3px; 
 	font-size:14px;
 }
@@ -2758,7 +2742,7 @@ footer .image-divider.fixed-height{
 }
 
 .story-date .date-only{
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif; 
 	font-size:30px; 
 	color:#FFF; 
 	line-height:30px; 
@@ -2766,7 +2750,7 @@ footer .image-divider.fixed-height{
 }
 
 .story-date .month-year{
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif; 
 	font-size:16px; 
 	color:#FFF;
 }
@@ -2863,7 +2847,7 @@ h2#dont-miss-it-title{
 .circle-countdown.is-countdown {
 	background-color:transparent;
 	border:none;
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif; 
 }
 
 .circle-countdown .countdown-amount {
@@ -3021,382 +3005,373 @@ button.mfp-close, button.mfp-arrow {
 
 }
 
-@media screen and (max-width: 991px) {
-    /*===============================================*/
-    /* 02. NAV BAR 	 							 	 */
-    /*===============================================*/
-    #nav-bar {
-        height: 100px;
-    }
+@media screen and (max-width: 991px) {	
+/*===============================================*/
+/* 02. NAV BAR 	 							 	 */
+/*===============================================*/
 
-    #nav-bar-sticky-wrapper {
-        height: 100px !important;
-    }
-
-    #nav-bar.top-bar.stick-it {
-        height: 100px;
-    }
-
-    #nav-bar.bottom-bar.stick-it {
-        height: 100px;
-    }
-
-    #nav-bar.bottom-bar.outside {
-        bottom: -100px;
-    }
-
-    /* ----------------------------------------------*/
-    /* 02.1 Width & Color (Nav Bar)			 		 */
-    /* ----------------------------------------------*/
-    /* 02.1.1 Fixed-width */
-    /* 02.1.2 Fluid-width */
-    #nav-bar.fluid-width #nav-wrapper,
-    #nav-bar.fixed-width #nav-wrapper {
-        padding: 20px 30px
-    }
-
-    /* ----------------------------------------------*/
-    /* 02.2 Logo & Nav Position	 					 */
-    /* ----------------------------------------------*/
-    .logo-wrapper {
-        margin: 0;
-    }
-
-    #nav-menu {
-        display: none
-    }
-
-    #nav-menu.sidebar {
-        display: block
-    }
-
-    #nav-menu.open {
-        display: block;
-    }
-
-    #nav-menu,
-    .bottom-bar.transparent #nav-menu {
-        list-style-type: none;
-        margin: 0;
-        padding: 0 !important;
-        position: absolute;
-        left: 0;
-        top: 100%;
-        clear: both !important;
-        text-align: left !important;
-        width: 100% !important;
-        background-color: #FFF;
-        height: 330px;
-        overflow: auto;
-    }
-
-    .transparent #nav-menu {
-        width: 80% !important;
-        position: absolute;
-        margin: auto;
-        top: 100%;
-        left: 0;
-        right: 0;
-    }
-
-    .transparent.stick-it #nav-menu {
-        width: 100% !important;
-    }
-
-    /* 02.2.1 Nav Center */
-    /* 02.2.2 Nav Left 	 */
-    /* 02.2.3 Nav Right  */
-    #nav-bar.nav-center .logo-wrapper,
-    #nav-bar.nav-left .logo-wrapper,
-    #nav-bar.nav-right .logo-wrapper {
-        position: relative;
-        float: left;
-    }
-
-    /*===============================================*/
-    /* 03. NAV MENU	 	 							 */
-    /*===============================================*/
-    /* ----------------------------------------------*/
-    /* 03.1 Parent Menu 						     */
-    /* ----------------------------------------------*/
-    #nav-menu, #nav-menu ul {
-        -webkit-overflow-scrolling: touch;
-    }
-
-    #nav-menu li {
-        position: relative;
-    }
-
-    #nav-menu li a {
-        display: block;
-        width: 100%;
-        color: #666;
-        border-bottom: solid thin #f4f2f2;
-    }
-
-    .transparent #nav-menu li a {
-        color: #666;
-    }
-
-    #nav-menu li a:hover {
-        background-color: #f0394d;
-        color: #FFF;
-    }
-
-    #nav-menu li:before {
-        content: '';
-    }
-
-    /* 03.1.2 Additional Class For Nav Center */
-    /* ----------------------------------------------*/
-    .first-child-margin,
-    .last-child-margin,
-    .split-margin {
-        margin: 0
-    }
-
-    /* ----------------------------------------------*/
-    /* 03.2 Child Menu 								 */
-    /* ----------------------------------------------*/
-    #nav-menu ul {
-        display: block;
-        width: 100%;
-        position: relative;
-        top: 0;
-        text-align: left;
-        border-top: none;
-    }
-
-    #nav-menu li > ul li a:before {
-        content: '-';
-        padding-right: 10px;
-    }
-
-    /* 03.2.2 Child-Parent Arrow */
-    /* ----------------------------------------------*/
-    #nav-menu li > ul li a:after {
-        content: '';
-    }
-
-    /* 03.2.3 More Child */
-    /* ----------------------------------------------*/
-    #nav-menu ul ul {
-        display: block;
-        width: 100%;
-        position: relative;
-        top: 0;
-        left: 0;
-        border: none;
-    }
-
-    #nav-menu ul ul li a:before {
-        content: '- -';
-        padding-right: 10px;
-    }
-
-    #nav-menu ul ul ul li a:before {
-        content: '- - -';
-        padding-right: 10px;
-    }
-
-    /* ----------------------------------------------*/
-    /* 03.3 Mobile Nav								 */
-    /* ----------------------------------------------*/
-    #mobile-nav {
-        display: block;
-        position: relative;
-        float: right;
-        font-size: 28px;
-        margin-top: 12px;
-        z-index: 1000;
-    }
-
-    .transparent #mobile-nav {
-        color: #FFF;
-    }
-
-    .transparent.stick-it #mobile-nav {
-        color: #666;
-    }
-
-    /* ----------------------------------------------*/
-    /* 04.1 Menuicon Bar Width & Position 			 */
-    /*-----------------------------------------------*/
-    #menuicon-bar {
-        top: 0;
-        padding: 0 30px
-    }
-
-    /* 04.1.3 Menuicon-Left */
-    /* ----------------------------------------------*/
-    #menuicon-bar.menuicon-left .logo-outter-wrapper {
-        margin-top: 40px;
-    }
-
-    /* 04.1.4 Menuicon-Right */
-    /* ----------------------------------------------*/
-    #menuicon-bar.menuicon-right .logo-outter-wrapper {
-        margin-top: 40px;
-    }
-
-    /* 04.2.2 Sticky Menu Icon */
-    /* ----------------------------------------------*/
-    #sticky-menuicon {
-        top: 10px;
-    }
-
-    #menuicon-bar.menuicon-right #sticky-menuicon {
-        right: 30px;
-    }
-
-    #menuicon-bar.menuicon-left #sticky-menuicon {
-        left: 30px;
-    }
-
-    /* 06.2.1 Main Slider Flexslider Control Nav & Paging */
-    /* ----------------------------------------------*/
-    #main-slider.flexslider:hover .flex-prev {
-        opacity: 0.4;
-        left: 20px;
-    }
-
-    #main-slider.flexslider:hover .flex-next {
-        opacity: 0.4;
-        right: 20px;
-    }
-
-    #main-slider.flexslider .flex-direction-nav .flex-prev {
-        opacity: 0.4;
-        left: 20px;
-    }
-
-    #main-slider.flexslider .flex-direction-nav .flex-next {
-        opacity: 0.4;
-        right: 20px;
-    }
-
-    /* ----------------------------------------------*/
-    /* 07.1 PAGE LAYOUT						 		 */
-    /* ----------------------------------------------*/
-    /* 07.1.1 Page Without Slider					 */
-    /* ----------------------------------------------*/
-    .no-slider-page #content {
-        padding: 140px 0 80px 0;
-    }
-
-    /* 07.1.2 Page With Slider					 	 */
-    /* ----------------------------------------------*/
-    .slider-title-page #content {
-        padding: 80px 0;
-    }
-
-    /* 07.1.3 Page With Banner						 */
-    /* ----------------------------------------------*/
-    .slider-banner-page #content {
-        padding: 60px 0 80px 0;
-    }
-
-    /* 07.1.4 Page With Full Gallery				 */
-    /* ----------------------------------------------*/
-    .full-gallery-page #content {
-        padding: 100px 0 80px 0;
-    }
-
-    /* 07.1.5 Page With Outside Bottom Bar 			 */
-    /* ----------------------------------------------*/
-    .outside-bottom-bar-page #content {
-        margin-top: 100px;
-    }
-
-    /* 07.2.7 Image & Video Divider					 */
-    /* ----------------------------------------------*/
-    .divider-wrapper {
-        padding: 70px 0;
-    }
-
-    .image-divider {
-        background-attachment: scroll;
-    }
-
-    /*-----------------------------------------------*/
-    /* 07.2.13 Popup Template						 */
-    /*-----------------------------------------------*/
-    #popup-template {
-        width: 90%;
-    }
-
-    /*===============================================*/
-    /* 13 LOCATION PAGE								 */
-    /*===============================================*/
-    .interest-icon {
-        width: 10%;
-    }
-
-    .interest-blurb {
-        width: 88%;
-    }
-
-    /* ----------------------------------------------*/
-    /* 14.2 Couple Section							 */
-    /* ----------------------------------------------*/
-    .his-her-name .heart-wrapper {
-        display: none;
-    }
-
-    /* ----------------------------------------------*/
-    /* 14.3 Our Story Section						 */
-    /* ----------------------------------------------*/
-    .story-row.row {
-        display: block;
-        padding: 20px 0
-    }
-
-    .story-row.row [class*="col-"] {
-        display: block;
-        text-align: center;
-    }
-
-    .story-date-wrapper {
-        margin-bottom: 30px;
-    }
-
-    .story-date {
-        float: none;
-        position: absolute;
-        top: -70px;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .story-date .month-year {
-        font-family: 'Futura-pt', sans-serif;
-        font-size: 16px;
-        color: #FFF;
-    }
-
-    .arrow-right {
-        display: none;
-        float: none;
-    }
-
-    .arrow-left {
-        display: none;
-        float: none;
-    }
-
-    .vertical-line {
-        display: none;
-    }
-
-    /* ----------------------------------------------*/
-    /* 14.4 Where When Section						 */
-    /* ----------------------------------------------*/
-    .border-column {
-        border: none;
-    }
-
+#nav-bar{
+	height:100px;
 }
+
+#nav-bar-sticky-wrapper{
+	height:100px !important;
+}
+
+#nav-bar.top-bar.stick-it{
+	height:100px; 	
+}
+
+#nav-bar.bottom-bar.stick-it{
+	height:100px; 	
+}
+
+#nav-bar.bottom-bar.outside{
+	bottom:-100px;
+}
+
+/* ----------------------------------------------*/
+/* 02.1 Width & Color (Nav Bar)			 		 */
+/* ----------------------------------------------*/
+/* 02.1.1 Fixed-width */
+/* 02.1.2 Fluid-width */
+#nav-bar.fluid-width #nav-wrapper,
+#nav-bar.fixed-width #nav-wrapper{
+	padding:20px 30px
+}
+
+/* ----------------------------------------------*/
+/* 02.2 Logo & Nav Position	 					 */
+/* ----------------------------------------------*/
+.logo-wrapper{
+	margin:0;
+}
+
+#nav-menu { display: none }
+#nav-menu.sidebar {display:block}	
+#nav-menu.open { display: block; }
+
+#nav-menu,
+.bottom-bar.transparent #nav-menu{	
+	list-style-type:none; 
+	margin:0; 
+	padding:0 !important; 
+	position:absolute;
+	left:0;
+	top:100%;
+	clear:both !important;
+	text-align:left !important;
+	width:100% !important;
+	background-color:#FFF;
+	height:330px;
+	overflow:auto;
+}
+
+.transparent #nav-menu{
+	width:80% !important;
+	position:absolute; 
+	margin:auto; 
+	top:100%; 
+	left:0; 
+	right:0;
+}
+
+.transparent.stick-it #nav-menu{
+	width:100% !important;
+}
+
+/* 02.2.1 Nav Center */
+/* 02.2.2 Nav Left 	 */
+/* 02.2.3 Nav Right  */
+#nav-bar.nav-center .logo-wrapper,
+#nav-bar.nav-left .logo-wrapper,
+#nav-bar.nav-right .logo-wrapper{
+	position:relative;
+	float:left;	
+}
+
+
+/*===============================================*/
+/* 03. NAV MENU	 	 							 */
+/*===============================================*/
+
+/* ----------------------------------------------*/
+/* 03.1 Parent Menu 						     */
+/* ----------------------------------------------*/
+#nav-menu, #nav-menu ul{
+	-webkit-overflow-scrolling : touch;
+}
+
+#nav-menu li{
+	position:relative;
+}
+
+#nav-menu li a{
+	display:block;
+	width:100%;
+	color:#666;
+	border-bottom:solid thin #f4f2f2;
+}
+
+.transparent #nav-menu li a{
+	color:#666;
+}
+
+#nav-menu li a:hover{
+	background-color:#f0394d;
+	color:#FFF;
+}
+
+#nav-menu li:before{
+	content: '';
+}
+
+/* 03.1.2 Additional Class For Nav Center */
+/* ----------------------------------------------*/
+.first-child-margin,
+.last-child-margin,
+.split-margin{
+	margin:0
+}
+
+/* ----------------------------------------------*/
+/* 03.2 Child Menu 								 */
+/* ----------------------------------------------*/
+#nav-menu ul{
+	display:block;
+	width:100%;
+	position:relative;
+	top:0;
+	text-align:left;
+	border-top:none;
+}
+
+#nav-menu li > ul li a:before{ 
+	content: '-';
+	padding-right:10px;
+} 
+
+/* 03.2.2 Child-Parent Arrow */
+/* ----------------------------------------------*/
+#nav-menu li > ul li a:after { 
+	content: '';
+} 
+
+
+/* 03.2.3 More Child */
+/* ----------------------------------------------*/
+#nav-menu ul ul{
+	display:block;
+	width:100%;
+	position:relative;
+	top:0;
+	left:0;
+	border:none;
+}
+
+#nav-menu ul ul li a:before{ 
+	content: '- -';
+	padding-right:10px;
+} 
+
+#nav-menu ul ul ul li a:before{ 
+	content: '- - -';
+	padding-right:10px;
+} 
+
+
+/* ----------------------------------------------*/
+/* 03.3 Mobile Nav								 */
+/* ----------------------------------------------*/
+#mobile-nav{
+	display:block;
+	position:relative;
+	float:right;
+	font-size:28px;
+	margin-top:12px;
+	z-index:1000;
+}
+
+.transparent #mobile-nav{	
+	color:#FFF;
+}
+
+.transparent.stick-it #mobile-nav{
+	color:#666;	
+}
+
+
+/* ----------------------------------------------*/
+/* 04.1 Menuicon Bar Width & Position 			 */
+/*-----------------------------------------------*/
+#menuicon-bar{
+	top:0;
+	padding:0 30px
+}
+
+/* 04.1.3 Menuicon-Left */
+/* ----------------------------------------------*/
+#menuicon-bar.menuicon-left .logo-outter-wrapper{
+	margin-top:40px;
+}
+
+
+/* 04.1.4 Menuicon-Right */
+/* ----------------------------------------------*/
+#menuicon-bar.menuicon-right .logo-outter-wrapper{
+	margin-top:40px;
+}
+
+/* 04.2.2 Sticky Menu Icon */
+/* ----------------------------------------------*/
+#sticky-menuicon{
+	top:10px;
+}
+
+#menuicon-bar.menuicon-right #sticky-menuicon{
+	right:30px; 
+}
+
+#menuicon-bar.menuicon-left #sticky-menuicon{
+	left:30px; 
+}
+
+
+
+/* 06.2.1 Main Slider Flexslider Control Nav & Paging */
+/* ----------------------------------------------*/
+#main-slider.flexslider:hover .flex-prev { opacity:0.4;  left: 20px; }
+#main-slider.flexslider:hover .flex-next { opacity:0.4; right: 20px; }
+#main-slider.flexslider .flex-direction-nav .flex-prev { opacity:0.4; left: 20px; }
+#main-slider.flexslider .flex-direction-nav .flex-next { opacity:0.4; right: 20px; }
+
+
+/* ----------------------------------------------*/
+/* 07.1 PAGE LAYOUT						 		 */
+/* ----------------------------------------------*/
+
+/* 07.1.1 Page Without Slider					 */
+/* ----------------------------------------------*/
+.no-slider-page #content{
+	padding:140px 0 80px 0;
+}
+
+/* 07.1.2 Page With Slider					 	 */
+/* ----------------------------------------------*/
+.slider-title-page #content{
+	padding:80px 0;
+}
+
+/* 07.1.3 Page With Banner						 */
+/* ----------------------------------------------*/
+.slider-banner-page #content{
+	padding:60px 0 80px 0;
+}
+
+/* 07.1.4 Page With Full Gallery				 */
+/* ----------------------------------------------*/
+.full-gallery-page #content{
+	padding:100px 0 80px 0;
+}
+
+/* 07.1.5 Page With Outside Bottom Bar 			 */
+/* ----------------------------------------------*/
+.outside-bottom-bar-page #content{
+	margin-top:100px;
+}
+
+/* 07.2.7 Image & Video Divider					 */
+/* ----------------------------------------------*/
+.divider-wrapper{
+	padding:70px 0;
+}
+
+.image-divider {
+	background-attachment: scroll;
+}
+
+/*-----------------------------------------------*/
+/* 07.2.13 Popup Template						 */
+/*-----------------------------------------------*/
+#popup-template{
+	width:90%;
+}
+
+
+/*===============================================*/
+/* 13 LOCATION PAGE								 */
+/*===============================================*/
+.interest-icon{
+	width:10%;
+}
+
+.interest-blurb{
+	width:88%;
+}
+
+/* ----------------------------------------------*/
+/* 14.2 Couple Section							 */
+/* ----------------------------------------------*/
+.his-her-name .heart-wrapper{
+	display:none;
+}
+
+/* ----------------------------------------------*/
+/* 14.3 Our Story Section						 */
+/* ----------------------------------------------*/
+.story-row.row {
+    display: block;
+	padding:20px 0
+}
+
+.story-row.row [class*="col-"] {
+    display: block;
+	text-align:center;
+}
+
+.story-date-wrapper{
+	margin-bottom:30px;
+}
+
+.story-date{
+	float:none;
+	position:absolute;	
+	top:-70px;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+.story-date .month-year{
+	font-family: 'Oswald', sans-serif; 
+	font-size:16px; 
+	color:#FFF;
+}
+
+.arrow-right {
+	display:none;
+	float:none;
+}
+
+.arrow-left {
+	display:none;
+	float:none;
+}
+
+.vertical-line{
+	display:none;
+}
+
+
+/* ----------------------------------------------*/
+/* 14.4 Where When Section						 */
+/* ----------------------------------------------*/
+.border-column{
+	border:none;
+}
+
+
+
 
 
 @media screen and (max-width: 991px) and (orientation : landscape) {
@@ -3444,36 +3419,38 @@ form .btn{
 }
 
 
-@media screen and (max-width: 480px) {
-    /*===============================================*/
-    /* 01. GENERAL			 						 */
-    /*===============================================
-    p{
-        font-size:14px;
-        line-height:24px;
-    }*/
-    /* 06.5.6 Save The Date Title */
-    /* ----------------------------------------------*/
-    #save-the-date {
-        padding-right: 40px;
-        margin-bottom: 0px;
-        padding-top: 0;
+@media screen and (max-width: 480px)  {	
+/*===============================================*/
+/* 01. GENERAL			 						 */
+/*===============================================
+p{
+	font-size:14px;
+	line-height:24px;
+}*/
 
-    }
 
-    #save {
-        font-size: 60px;
-        line-height: 35px
-    }
 
-    #the-date {
-        font-size: 50px;
-    }
+/* 06.5.6 Save The Date Title */	
+/* ----------------------------------------------*/	
+#save-the-date{
+	padding-right:40px;
+	margin-bottom:0px;
+	padding-top:0;
+	
+}
 
-    #date {
-        font-size: 40px;
-        line-height: 25px;
-    }
+#save{
+	font-size:60px; 
+	line-height:35px
+}
+
+#the-date{
+	font-size:50px;
+}
+
+#date{
+	font-size:40px; 
+	line-height:25px;
 }
 
 /* 07.2.2 Section Title Wrapper					 */
@@ -3666,6 +3643,8 @@ form .btn{
 	padding: 80px 0
 }
 
+}
+
 
 @media screen and (max-width: 320px) {
 /* 06.5.6 Save The Date Title */
@@ -3689,7 +3668,7 @@ form .btn{
 #date{
 	font-size:30px; 
 	line-height:20px;
-}}
+}
 
 /* ----------------------------------------------*/
 /* 12.1 Couple Section							 */
@@ -3735,13 +3714,10 @@ footer .image-divider.fixed-height{
 }
 
 #footer-couple-name{
-	font-family: 'Futura-pt', sans-serif;
+	font-family: 'Oswald', sans-serif; 
 	font-size:15px; 
 	color:#FFF; 
 	letter-spacing:3px; 
 	margin-top:10px;
 }
-
-#content ul {
-	list-style-type: circle
 }
