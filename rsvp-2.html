@@ -63,7 +63,6 @@
 
 </div> <!--END of PRELOADER-->
 
-
 <!-- NAVIGATION -->
 <header id="nav-header">
 	<nav id="nav-bar" class="top-bar fluid-width transparent nav-center sticky-nav animation fadeInDown">
@@ -136,7 +135,6 @@
 
 <!--CONTENT SECTION-->
 <section id="content">
-
 	<!-- ICON -->
 	<div class="icon-title">
 		<div class="de-icon circle light large-size aligncenter">
@@ -144,77 +142,72 @@
 		</div>
 	</div>
 
-	<form method="post" action="rsvp.php" id="rsvpform">
-		<!--TEXT SECTION-->
-
-		<div class="row">
-			<div class="col-md-offset-1 col-md-5">
-				<h3 style="margin-top:3px;" class="official-headline">Please respond before April 30 2016</h3>
-				<p>We are beyond excited that you are making every effort to attend the celebration of our Big Day! Please RSVP no later than April 30th, 2016.</p>
-				<p>To help us with the planning, please respond to the questions on the right. For those lovely families who are coming with the kids, kindly specify the age and whether they will need a meal to be provided by our caterers. </p>
-				<p>Looking forward seeing you in Bordeaux - N ♥ J </p>
-
-			</div>
-			<div class="col-md-5">
-				<div class="rsvp-wrapper">
+	<div class="row">
+		<div class="col-md-offset-1 col-md-5">
+			<h3 class="official-headline">Please respond before April 30 2016</h3>
+			<p>We are beyond excited that you are making every effort to attend the celebration of our Big Day! Please RSVP no later than April 30th, 2016.</p>
+			<p>To help us with the planning, please respond to the questions on the right. For those lovely families who are coming with the kids, kindly specify the age and whether they will need a meal to be provided by our caterers. </p>
+			<p>Looking forward seeing you in Bordeaux - N ♥ J </p>
+		</div>
+		<div class="col-md-5">
+			<p id="signup-success" class="text-success"></p>
+			<p id="signup-error" class="text-danger"></p>
+			<div class="rsvp-wrapper">
+				<form class="signup-form" id="signup-form" role="form" onsubmit="return signup(this)">
 					<div class="form-group">
-						<label for="input-email-icon">*NAME</label>
+						<label>*NAME</label>
 						<div class="input-group">
 							<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
-							<input type="name" id="input-name-icon"  class="form-control ajax-input" placeholder="" data-required="Name Required" data-output-label="Output Name">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="input-email-icon">*EMAIL</label>
-						<div class="input-group">
-							<div class="input-group-addon"><i class="de-icon-mail"></i></div>
-							<input type="email" id="input-email-icon"  class="form-control ajax-input" placeholder="" data-required="Email Required" data-output-label="Output Email">
+							<input class="form-control" name="name" type="text" class="form-control" placeholder="" required>
 						</div>
 					</div>
 
+					<div class="form-group">
+						<label>*Email</label>
+						<div class="input-group">
+							<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
+							<input class="form-control" name="email" type="email" class="form-control" placeholder="" required>
+						</div>
+					</div>
 
 					<div class="form-group">
 						<label>*ARE YOU ATTENDING?</label>
-						<div id="events-radio" class="ajax-input ajax-radio" data-required="Are you Attending?" data-output-label="Attending">
+						<div id="attending-radio" class="ajax-input ajax-radio" data-output-label="Attending" required>
 							<div data-toggle="buttons">
 								<label class="btn btn-primary no-icon">
-									<input type="radio" name="attending" id="accept" value="Accept with Pleasure"> Accept with Pleasure
+									<input type="radio" name="attending" id="accept" value="Yes"> Accept with Pleasure
 								</label>
 								<label class="btn btn-primary no-icon">
-									<input type="radio" name="attending" id="decline" value="Decline with Regrets"> Decline with Regrets
+									<input type="radio" name="attending" id="decline" value="No"> Decline with Regrets
 								</label>
 							</div>
 						</div>
 					</div>
 
 					<div class="form-group">
-						<label for="input-select-icon">*NUMBER OF GUEST</label>
+						<label>*NUMBER OF GUEST</label>
 						<div class="input-group">
 							<div class="input-group-addon"><i class="de-icon-adult"></i></div>
-							<select id="input-select-icon" class="form-control ajax-input" data-required="How many Guest?" data-output-label="Output Guest">
+							<select name="guest" class="form-control ajax-input" data-output-label="Output Guest">
 								<option disabled selected>Please Select An Option</option>
-								<option id="1">Just me</option>
-								<option id="2">Me and +1</option>
-								<option id=">2">Me, +1 and kid(s)</option>
+								<option id="1" value="1">Just me</option>
+								<option id="2" value="2">Me and +1</option>
+								<option id=">2" value=">2">Me, +1 and kid(s)</option>
 							</select>
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label>*PLEASE INDICATE YOUR MEAL CHOICE</label>
-						<div id="events-radio" class="ajax-input ajax-radio" data-required="Meal Choice" data-output-label="Duck">
+						<div id="meal-radio" class="ajax-input ajax-radio" data-output-label="Duck">
 							<div data-toggle="buttons">
 								<label class="btn btn-primary no-icon">
 									<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
-									<input type="radio" name="attending" id="menu-duck" value="Duck"> Duck
+									<input type="radio" name="meal" id="menu-duck" value="Duck"> Duck
 								</label>
 								<label class="btn btn-primary no-icon">
 									<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
-									<input type="radio" name="attending" id="menu-fish" value="Fish"> Fish
-								</label>
-								<label class="btn btn-primary no-icon">
-									<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
-									<input type="radio" name="attending" id="menu-vegetation" value="Vegetarian"> Vegetarian
+									<input type="radio" name="meal" id="menu-fish" value="Fish"> Fish
 								</label>
 							</div>
 						</div>
@@ -222,78 +215,50 @@
 
 					<div class="form-group">
 						<label>MISCELLANEOUS</label>
+
 						<div id="input-checkbox-custom-icon" class="ajax-input ajax-checkbox" data-output-label="Output Miscellaneous">
 							<div class="checkbox">
 								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" value="option1">
+									<input type="checkbox" name="kidmeal" value="Yes">
 									Require a kid's meal at the wedding
 								</label>
-							</div>
-							<div class="checkbox">
 								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" value="option2">
+									<input type="checkbox" name="dietary" value="Yes">
 									Have dietary restrictions
 								</label>
-							</div>
-							<div class="checkbox">
 								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" value="option3" >
+									<input type="checkbox" name="bbq" value="Yes" >
 									Attending the 'day before' BBQ
 								</label>
-							</div>
-							<div class="checkbox">
 								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" value="option4" >
+									<input type="checkbox" name="winetour" value="Yes" >
 									Interested in the 'day after' Wine Tour
 								</label>
-							</div>
-							<div class="checkbox">
 								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" value="option5" >
+									<input type="checkbox" name="chateau" value="Yes" >
 									Stay at Chateau
 								</label>
-							</div>
-							<div class="checkbox">
 								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" value="option5" >
+									<input type="checkbox" name="gite" value="Yes" >
 									Stay at Gite Langoiran
 								</label>
 							</div>
 						</div>
 					</div>
 
-					<!--<div class="form-group">-->
-						<!--<label for="input-song">Song Request</label>-->
-						<!--<div class="input-group">-->
-							<!--<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>-->
-							<!--<input type="text" id="input-song" class="form-control ajax-input"  placeholder="We will try to play your song during the wedding">-->
-						<!--</div>-->
-					<!--</div>-->
-
-					<!--<div class="form-group">-->
-						<!--<label for="input-comments">Comments</label>-->
-						<!--<div class="input-group">-->
-							<!--<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>-->
-							<!--<textarea id="input-comments" class="form-control ajax-input" rows="4" placeholder="Please use this area to specify things like dietary restrictions, etc " data-output-label="Output Comments"></textarea>-->
-						<!--</div>-->
-					<!--</div>-->
-
-
-
-
-					<div class="form-group">
-						<input type="submit" id="submitButton"  name="submitButton" class="button medium reverse" value="SUBMIT">
-					</div>
-				</div>
+					<button class="btn btn-success" id="signup-button" type="submit" >Submit</button>
+				</form>
 			</div>
-		</div><!--END of TEXT SECTION-->
+		</div>
+	</div>
+	<!--<div class="signup">-->
+		<!---->
+	<!--</div>-->
 
 
-	</form>
 </section>
 
 <!-- FOOTER SECTION -->
-<footer>
 	<footer>
 		<div class="image-divider fixed-height" style="background-image:url(images/balloon.jpg);" data-stellar-background-ratio="0.5" >
 
@@ -374,12 +339,51 @@
 <!-- Owl Carousel -->
 <script src="js/owlcarousel/owl.carousel.js"></script>
 <!-- RSVP -->
+<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
 <script src="js/rsvp/rsvp.js"></script>
 
 <!-- Custom Core Script -->
 <script type="text/javascript" src="js/script.js"></script>
 <!-- Custom Additional Script -->
 <script type="text/javascript" src="js/main-slider-fade.js"></script>
+
+<script>
+	var signupForm = document.getElementById('signup-form');
+	var signupSuccess = document.getElementById('signup-success');
+	var signupError = document.getElementById('signup-error');
+	var signupBtn = document.getElementById('signup-button');
+	var onSignupComplete = function(error) {
+		signupBtn.disabled = false;
+		if (error) {
+			signupError.innerHTML = 'Sorry. Could not RSVP. Please email us.';
+		} else {
+			signupSuccess.innerHTML = 'We are looking forward to seeing you!';
+			// hide the form
+			signupForm.style.display = 'none';
+		}
+	};
+	function signup(formObj) {
+		// Store emails to firebase
+		var myFirebaseRef = new Firebase("https://bordeaux-wedding.firebaseio.com/rsvp");
+		myFirebaseRef.push({
+			name: formObj.name.value,
+			email: formObj.email.value,
+			attending: formObj.attending.value,
+			guest: formObj.guest.value,
+			meal: formObj.meal.value,
+			kidmeal: formObj.kidmeal.checked,
+			dietary: formObj.dietary.checked,
+			bbq: formObj.bbq.checked,
+			winetour: formObj.winetour.checked,
+			chateau: formObj.chateau.checked,
+			gite: formObj.gite.checked,
+
+		}, onSignupComplete);
+		signupBtn.disabled = true;
+		parent.scrollTo(0, 750)
+		return false;
+	}
+</script>
 
 </body>
 </html>
