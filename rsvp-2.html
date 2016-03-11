@@ -175,10 +175,10 @@
 						<div id="attending-radio" class="ajax-input ajax-radio" data-output-label="Attending" required>
 							<div data-toggle="buttons">
 								<label class="btn btn-primary no-icon">
-									<input type="radio" name="attending" id="accept" value="Yes"> Accept with Pleasure
+									<input type="radio" name="attending" value="Yes"> Accept with Pleasure
 								</label>
 								<label class="btn btn-primary no-icon">
-									<input type="radio" name="attending" id="decline" value="No"> Decline with Regrets
+									<input type="radio" name="attending" value="No"> Decline with Regrets
 								</label>
 							</div>
 						</div>
@@ -203,11 +203,11 @@
 							<div data-toggle="buttons">
 								<label class="btn btn-primary no-icon">
 									<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
-									<input type="radio" name="meal" id="menu-duck" value="Duck"> Duck
+									<input type="radio" name="meal" value="Duck"> Duck
 								</label>
 								<label class="btn btn-primary no-icon">
 									<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
-									<input type="radio" name="meal" id="menu-fish" value="Fish"> Fish
+									<input type="radio" name="meal"  value="Fish"> Fish
 								</label>
 							</div>
 						</div>
@@ -339,7 +339,8 @@
 <!-- Owl Carousel -->
 <script src="js/owlcarousel/owl.carousel.js"></script>
 <!-- RSVP -->
-<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+<!--<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>-->
+<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
 <script src="js/rsvp/rsvp.js"></script>
 
 <!-- Custom Core Script -->
@@ -363,14 +364,28 @@
 		}
 	};
 	function signup(formObj) {
+		console.log("i'm here");
+		var data = [];
+		data.name = formObj.name.value;
+		data.email = formObj.email.value;
+		data.attending = getRadioVal(formObj,"attending");
+		data.guest = formObj.guest.value;
+		data.meal = getRadioVal(formObj,"meal");
+		data.kidmeal = formObj.kidmeal.value;
+		data.dietary = formObj.dietary.value;
+		data.bbq = formObj.bbq.value;
+		data.winetour = formObj.winetour.value;
+		data.chateau = formObj.chateau.value;
+		data.gite = formObj.gite.value;
+
 		// Store emails to firebase
 		var myFirebaseRef = new Firebase("https://bordeaux-wedding.firebaseio.com/rsvp");
 		myFirebaseRef.push({
 			name: formObj.name.value,
 			email: formObj.email.value,
-			attending: formObj.attending.value,
+			attending: getRadioVal(formObj,"attending"),
 			guest: formObj.guest.value,
-			meal: formObj.meal.value,
+			meal: getRadioVal(formObj,"meal"),
 			kidmeal: formObj.kidmeal.checked,
 			dietary: formObj.dietary.checked,
 			bbq: formObj.bbq.checked,
@@ -380,9 +395,26 @@
 
 		}, onSignupComplete);
 		signupBtn.disabled = true;
-		parent.scrollTo(0, 750)
+//		parent.scrollTo(0, 50);
+		window.scrollTo(0, 350);
 		return false;
 	}
+
+	function getRadioVal(form, name) {
+		var val;
+		// get list of radio buttons with specified name
+		var radios = form.elements[name];
+
+		// loop through list of radio buttons
+		for (var i=0, len=radios.length; i<len; i++) {
+			if ( radios[i].checked ) { // radio checked?
+				val = radios[i].value; // if so, hold its value in val
+				break; // and break out of for loop
+			}
+		}
+		return val; // return value of checked radio or undefined if none checked
+	}
+
 </script>
 
 </body>
