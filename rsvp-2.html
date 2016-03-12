@@ -174,74 +174,124 @@
 						<label>*ARE YOU ATTENDING?</label>
 						<div id="attending-radio" class="ajax-input ajax-radio" data-output-label="Attending" required>
 							<div data-toggle="buttons">
-								<label class="btn btn-primary no-icon">
+								<label class="btn btn-primary no-icon" onclick="showMe('div1');">
 									<input type="radio" name="attending" value="Yes"> Accept with Pleasure
 								</label>
-								<label class="btn btn-primary no-icon">
+								<label class="btn btn-primary no-icon" onclick="hideMe('div1');">
 									<input type="radio" name="attending" value="No"> Decline with Regrets
 								</label>
 							</div>
 						</div>
 					</div>
 
-					<div class="form-group">
-						<label>*NUMBER OF GUEST</label>
-						<div class="input-group">
-							<div class="input-group-addon"><i class="de-icon-adult"></i></div>
-							<select name="guest" class="form-control ajax-input" data-output-label="Output Guest">
-								<option disabled selected>Please Select An Option</option>
-								<option id="1" value="1">Just me</option>
-								<option id="2" value="2">Me and +1</option>
-								<option id=">2" value=">2">Me, +1 and kid(s)</option>
-							</select>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<label>*PLEASE INDICATE YOUR MEAL CHOICE</label>
-						<div id="meal-radio" class="ajax-input ajax-radio" data-output-label="Duck">
-							<div data-toggle="buttons">
-								<label class="btn btn-primary no-icon">
-									<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
-									<input type="radio" name="meal" value="Duck"> Duck
-								</label>
-								<label class="btn btn-primary no-icon">
-									<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
-									<input type="radio" name="meal"  value="Fish"> Fish
-								</label>
+					<div id="div1" style="display:none">
+						<div class="form-group">
+							<label>*NUMBER OF GUEST</label>
+							<div class="input-group">
+								<div class="input-group-addon"><i class="de-icon-adult"></i></div>
+								<select name="guest" class="form-control ajax-input" data-output-label="Output Guest">
+									<option disabled selected>Please Select An Option</option>
+									<option id="1" value="1">Just me</option>
+									<option id="2" value="2">Me and +1</option>
+									<option id=">2" value=">2">Me, +1 and kid(s)</option>
+								</select>
 							</div>
 						</div>
-					</div>
 
-					<div class="form-group">
-						<label>MISCELLANEOUS</label>
+						<div class="form-group">
+							<label>*PLEASE INDICATE YOUR MEAL CHOICE</label>
+							<div id="meal-radio" class="ajax-input ajax-radio" data-output-label="Duck">
+								<div data-toggle="buttons">
+									<label class="btn btn-primary no-icon">
+										<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
+										<input type="radio" name="meal" value="Duck"> Duck
+									</label>
+									<label class="btn btn-primary no-icon">
+										<!--<span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
+										<input type="radio" name="meal"  value="Fish"> Fish
+									</label>
+								</div>
+							</div>
+						</div>
 
-						<div id="input-checkbox-custom-icon" class="ajax-input ajax-checkbox" data-output-label="Output Miscellaneous">
-							<div class="checkbox">
-								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" name="kidmeal" value="Yes">
-									Require a kid's meal at the wedding
-								</label>
-								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" name="dietary" value="Yes">
-									Have dietary restrictions
-								</label>
-								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" name="bbq" value="Yes" >
-									Attending the 'day before' BBQ
-								</label>
-								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" name="winetour" value="Yes" >
-									Interested in the 'day after' Wine Tour
-								</label>
-								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" name="chateau" value="Yes" >
-									Stay at Chateau
-								</label>
-								<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
-									<input type="checkbox" name="gite" value="Yes" >
-									Stay at Gite Langoiran
-								</label>
+						<div class="form-group">
+							<label>*PLEASE INDICATE YOUR +1's MEAL CHOICE</label>
+							<div id="plus1meal-radio" class="ajax-input ajax-radio" data-output-label="Fish">
+								<div data-toggle="buttons">
+									<label class="btn btn-primary no-icon">
+										<input type="radio" name="plus1meal" value="Duck"> Duck
+									</label>
+									<label class="btn btn-primary no-icon">
+										<input type="radio" name="plus1meal"  value="Fish"> Fish
+									</label>
+									<label class="btn btn-primary no-icon">
+										<input type="radio" name="plus1meal" value="NA"> N/A
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label>*Accomodation Preference</label>
+							<div id="accomodation-radio" class="ajax-input ajax-radio" data-output-label="Chateau">
+								<div data-toggle="buttons">
+									<label class="btn btn-primary no-icon">
+										<input type="radio" name="accomodation" value="3NCL"> 3 Nights At Chateau
+									</label>
+									<label class="btn btn-primary no-icon">
+										<input type="radio" name="accomodation"  value="2NCL"> 2 Nights At Chateau
+									</label>
+									<label class="btn btn-primary no-icon">
+										<input type="radio" name="accomodation" value="3NGL"> 3 Nights At Gité
+									</label>
+									<label class="btn btn-primary no-icon">
+										<input type="radio" name="accomodation" value="2NGL"> 2 Nights At Gité
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label>MISCELLANEOUS</label>
+							<div id="input-checkbox-custom-icon" class="ajax-input ajax-checkbox" data-output-label="Output Miscellaneous">
+								<div class="checkbox">
+									<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
+										<input type="checkbox" name="kidmeal" value="Yes">
+										Require a kid's meal at the wedding
+									</label>
+									<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
+										<input type="checkbox" name="dietary" value="Yes">
+										Have dietary restrictions
+									</label>
+									<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
+										<input type="checkbox" name="bbq" value="Yes" >
+										Attending the 'day before' BBQ
+									</label>
+									<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
+										<input type="checkbox" name="winetour" value="Yes" >
+										Interested in the 'day after' Wine Tour
+									</label>
+									<label class="btn btn-primary custom-option-icon" data-toggle="buttons">
+										<input type="checkbox" name="rentcar" value="Yes" >
+										Plan to rent a car
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="input-song">Song Request</label>
+							<div class="input-group">
+								<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
+								<input type="text" name="song" class="form-control ajax-input"  placeholder="We will try to play your song during the wedding">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="input-comments">Comments</label>
+							<div class="input-group">
+								<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
+								<textarea id="input-comments" name="comments" class="form-control ajax-input" rows="4" placeholder="Please use this area to specify things like dietary restrictions, etc " data-output-label="Output Comments"></textarea>
 							</div>
 						</div>
 					</div>
@@ -358,41 +408,77 @@
 		if (error) {
 			signupError.innerHTML = 'Sorry. Could not RSVP. Please email us.';
 		} else {
-			signupSuccess.innerHTML = 'We are looking forward to seeing you!';
+			if (getRadioVal(signupForm,"attending") == "Yes"){
+				signupSuccess.innerHTML = 'We are looking forward to seeing you!';
+			}
+			else {
+				signupSuccess.innerHTML = 'We are sorry to hear that you cannot join us!' ;
+			}
 			// hide the form
 			signupForm.style.display = 'none';
 		}
 	};
+
 	function signup(formObj) {
-		console.log("i'm here");
+
+		//add date to the reviewer list
+		d = new Date();
+
+		// store form data in array
 		var data = [];
-		data.name = formObj.name.value;
-		data.email = formObj.email.value;
-		data.attending = getRadioVal(formObj,"attending");
-		data.guest = formObj.guest.value;
-		data.meal = getRadioVal(formObj,"meal");
-		data.kidmeal = formObj.kidmeal.value;
-		data.dietary = formObj.dietary.value;
-		data.bbq = formObj.bbq.value;
-		data.winetour = formObj.winetour.value;
-		data.chateau = formObj.chateau.value;
-		data.gite = formObj.gite.value;
+		if(getRadioVal(formObj,"attending") == "Yes") {
+			data.date = d.toDateString();
+			data.name = formObj.name.value;
+			data.email = formObj.email.value;
+			data.attending = getRadioVal(formObj,"attending");
+			data.guest = formObj.guest.value;
+			data.meal = getRadioVal(formObj,"meal");
+			data.plus1meal = getRadioVal(formObj,"plus1meal");
+			data.accomodation = getRadioVal(formObj,"accomodation");
+			data.kidmeal = formObj.kidmeal.checked;
+			data.dietary = formObj.dietary.checked;
+			data.bbq = formObj.bbq.checked;
+			data.winetour = formObj.winetour.checked;
+			data.rentcar = formObj.rentcar.checked;
+			data.song = formObj.song.value;
+			data.comments = formObj.comments.value;
+		}
+		else{
+			data.date = d.toDateString();
+			data.name = formObj.name.value;
+			data.email = formObj.email.value;
+			data.attending = getRadioVal(formObj,"attending");
+			data.guest = "";
+			data.meal = "";
+			data.plus1meal = "";
+			data.accomodation = "";
+			data.kidmeal = "";
+			data.dietary = "";
+			data.bbq = "";
+			data.winetour = "";
+			data.rentcar = "";
+			data.song = "";
+			data.comments = "";
+		}
 
 		// Store emails to firebase
 		var myFirebaseRef = new Firebase("https://bordeaux-wedding.firebaseio.com/rsvp");
 		myFirebaseRef.push({
-			name: formObj.name.value,
-			email: formObj.email.value,
-			attending: getRadioVal(formObj,"attending"),
-			guest: formObj.guest.value,
-			meal: getRadioVal(formObj,"meal"),
-			kidmeal: formObj.kidmeal.checked,
-			dietary: formObj.dietary.checked,
-			bbq: formObj.bbq.checked,
-			winetour: formObj.winetour.checked,
-			chateau: formObj.chateau.checked,
-			gite: formObj.gite.checked,
-
+			date: data.date,
+			name: data.name,
+			email: data.email,
+			attending: data.attending,
+			guest: data.guest,
+			meal: data.meal,
+			plus1meal: data.plus1meal,
+			accomodation: data.accomodation,
+			kidmeal: data.kidmeal,
+			dietary: data.dietary,
+			bbq: data.bbq,
+			winetour: data.winetour,
+			rentcar: data.rentcar,
+			song: data.song,
+			comments: data.comments
 		}, onSignupComplete);
 		signupBtn.disabled = true;
 //		parent.scrollTo(0, 50);
@@ -413,6 +499,16 @@
 			}
 		}
 		return val; // return value of checked radio or undefined if none checked
+	}
+
+	function showMe (box) {
+		console.log("in here");
+		document.getElementById(box).style.display = "block";
+	}
+
+	function hideMe (box) {
+		console.log("in here");
+		document.getElementById(box).style.display = "none";
 	}
 
 </script>
