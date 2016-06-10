@@ -154,6 +154,7 @@
 			<p id="signup-error" class="text-danger"></p>
 			<div class="rsvp-wrapper">
 				<form class="signup-form" id="signup-form" role="form" onsubmit="return signup(this)">
+					<h3 class="official-headline">Unfortunately, the RSVP for the wedding is closed. </h3>
 					<div class="form-group">
 						<label>*NAME</label>
 						<div class="input-group">
@@ -174,10 +175,10 @@
 						<label>*ARE YOU ATTENDING?</label>
 						<div id="attending-radio" class="ajax-input ajax-radio" data-output-label="Attending" required>
 							<div data-toggle="buttons">
-								<label class="btn btn-primary no-icon" onclick="showMe('div1');">
+								<label class="btn btn-success no-icon disabled" onclick="showMe('div1');">
 									<input type="radio" name="attending" value="Yes"> Accept with Pleasure
 								</label>
-								<label class="btn btn-primary no-icon" onclick="hideMe('div1');">
+								<label class="btn btn-danger no-icon disabled" onclick="hideMe('div1');">
 									<input type="radio" name="attending" value="No"> Decline with Regrets
 								</label>
 							</div>
@@ -294,7 +295,7 @@
 						</div>
 					</div>
 
-					<button class="btn btn-success" id="signup-button" type="submit" >Submit</button>
+					<button class="btn btn-success disabled" id="signup-button" type="submit" >Submit</button>
 				</form>
 			</div>
 		</div>
